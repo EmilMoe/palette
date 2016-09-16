@@ -1,0 +1,87 @@
+/*
+|--------------------------------------------------------------------------
+| Canvas Child-Theme : Helios
+|
+| The Helios theme is very similar to the default Canvas theme. You
+| do however get a fresh primary color that makes your blog
+| stand out from among the rest.
+|
+| Author : Todd Austin
+| GitHub : http://github.com/austintoddj
+|
+| Compatible with Canvas v2.1.5 or greater
+|--------------------------------------------------------------------------
+*/
+
+$brand-primary: purple;
+
+p {
+  a {
+    color: $brand-primary !important;
+  }
+  a:hover {
+    color: $brand-primary;
+  }
+  a:before {
+    background-color: $brand-primary;
+  }
+  a:hover:before {
+  }
+}
+
+a {
+  &:hover,
+  &:focus {
+    color: $brand-primary;
+  }
+}
+
+.post-preview {
+  > a {
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+  > .post-meta {
+    > a {
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+.btn-default {
+  &:hover,
+  &:focus {
+    background-color: $brand-primary;
+    border: 1px solid $brand-primary;
+  }
+}
+
+code {
+  color: $brand-primary !important;
+}
+
+@media only screen and (min-width: 1170px) {
+  &.is-fixed {
+    .navbar-brand {
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+      }
+    }
+    .nav {
+      li {
+        a {
+          &:hover,
+          &:focus {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+}
