@@ -1,6 +1,7 @@
 ## Palette
 
 [![StyleCI](https://styleci.io/repos/68401598/shield?branch=master&style=flat)](https://styleci.io/repos/68401598)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/austintoddj/palette/master/LICENSE)
 
 [Palette](https://github.com/austintoddj/palette) holds all of the official themes for [Canvas](https://canvas.toddaustin.io). Swapping one theme out
 for another is simple, just follow the guide below.
