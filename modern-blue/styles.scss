@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+/*
+|--------------------------------------------------------------------------
+| Canvas Child-Theme Styles : Frontend
+|
+| In this section you can define your own styles for the frontend of
+| the blog. By setting styles here and leaving the core alone you
+| can migrate this theme to another installation of Canvas.
+|--------------------------------------------------------------------------
+*/
+
+
+
+$bodyBackground: #f7f7f7;
+$headerColor: #2196F3;
+$heroFontFamily: 'Roboto Slab';
+$heroFontSize: 3em;
+$subheadingColor: #9e9e9e;
+$subheadingFont: 'Yellowtail';
+$standardFont: $heroFontFamily;
+$postHeaderFont: $standardFont;
+$postPreviewContainerColor: $headerColor;
+$postTitleColor: white;
+$postPreviewPadding: 15px;
+$linkColor: $headerColor;
+$hrColor: #e0f7fa;
+$imageBorderColor: #ccc;
+$postPreviewContainerBackgroundColor: #fff;
+$postPreviewContainerBorderColor: #ccc;
+$postBorderColor: #ccc;
+
+body{
+  background: $bodyBackground;
+  hr{
+    border: 0;
+    margin: 0;
+    padding: 10px;
+  }
+  #head-c{
+    h1{
+      font-family: $heroFontFamily !important;
+      font-size: $heroFontSize;
+      padding-bottom: 0.3em;
+      font-weight: bold;
+      a{
+        color: $headerColor !important;
+      }
+    }
+    h3{
+      color: $subheadingColor !important;
+      font-family: $subheadingFont;
+    }
+  }
+  .post-preview{
+    background-color: $postPreviewContainerBackgroundColor;
+    border: solid thin $postPreviewContainerBorderColor;
+    .post-title{
+      font-family: $heroFontFamily !important;
+      margin: 0;
+      padding: 0.3em;
+      padding-top: 0.5em;
+      text-align: center;
+      a{
+        &:hover{
+          color: $linkColor;
+        }
+      }
+    }
+    p{
+      padding: 0 $postPreviewPadding;
+      margin: 1em 0;
+      font-family: $standardFont;
+      &.post-meta{
+        color: $subheadingColor;
+        border-bottom: solid thin $postBorderColor;
+        text-align: center;
+      }
+      a{
+        color: $linkColor !important;
+        &:before{
+          background-color: $linkColor;
+        }
+      }
+    }
+  }
+  #post{
+    background-color: white;
+    border:solid thin $postBorderColor;
+    padding: 0;
+    h1, h2, h3, h4, h5, h6{
+      padding: 0 15px;
+    }
+    p{
+      padding: 0 1em;
+    }
+    img{
+      &.post-hero {
+        object-fit: cover;
+        width: 100%;
+        margin: 0;
+      }
+      &.author-img{
+        position: relative;
+        margin: 0 auto;
+        float: none !important;
+      }
+    }
+    a{
+      color: $linkColor !important;
+      &:before{
+        background-color: $linkColor;
+      }
+    }
+    table{
+      position: relative;
+      margin: 0 auto;
+    }
+    .post-page-title{
+      font-family: $postHeaderFont !important;
+      text-align: center;
+      border-bottom: solid thin $postBorderColor;
+      padding-bottom: 1em;
+    }
+    .post-page-meta{
+      text-align: center;
+    }
+    #auth-name{
+      text-align: center;
+    }
+  }
+  #scroll-to-top{
+    background-color: $headerColor !important;
+  }
+  .pager{
+    .previous, .next{
+      a{
+        background-color: $headerColor;
+        padding: 0.3em 1em !important;
+        color: $postTitleColor;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .col-md-offset-1{
+    margin: 0;
+    width: 100%;
+  }
+  img{
+    &.post-hero{
+      max-height: 400px;
+    }
+  }
+}
