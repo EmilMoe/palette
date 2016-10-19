@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-@import url('https://fonts.googleapis.com/css?family=Yellowtail');
-
 /*
 |--------------------------------------------------------------------------
-| Canvas Child-Theme Styles : Frontend
+| Canvas Child-Theme : Modern Blue
 |
-| In this section you can define your own styles for the frontend of
-| the blog. By setting styles here and leaving the core alone you
-| can migrate this theme to another installation of Canvas.
+| Author : Ben Fesili <https://github.com/benfes>
+| Source : https://github.com/austintoddj/palette/tree/master/modern-blue
+|
+| Compatiblity : Canvas v2.1.5 or greater
 |--------------------------------------------------------------------------
 */
 
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
 
 $bodyBackground: #f7f7f7;
 $headerColor: #2196F3;
